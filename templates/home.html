@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>Mad Libs Generator</h1>
+  <form action="/result" method="POST">
+    <label>Noun: <input type="text" name="noun" required></label><br><br>
+    <label>Verb: <input type="text" name="verb" required></label><br><br>
+    <label>Adjective: <input type="text" name="adjective" required></label><br><br>
+    <label>Place: <input type="text" name="place" required></label><br><br>
+    <button type="submit">Create Story</button>
+  </form>
+{% endblock %}
